@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuestionario de Cifras Significativas y Vectores</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 10px;
+    }
+
+    h1, h2, p {
+        margin: 10px 0;
+    }
+     p {
+        margin: 10px 0;
+    }
+
+    form {
+        margin: 10px 0;
+    }
+
+    form p {
+        margin: 0;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    input[type="button"] {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #FFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Ajustar el tamaño de los elementos en pantallas pequeñas */
+    @media screen and (max-width: 480px) {
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        form p {
+            font-size: 14px;
+        }
+
+        input[type="button"] {
+            font-size: 14px;
+        }
+    }
+    h1 {
+              font-size: 24px;
+              margin-left: 10px;
+          }
+  
+          img {
+              height: 64px;
+              width: 64px;
+              vertical-align: middle;
+          }
+</style>
+<body>
+    <h1><img src="Logo.png" alt="Logo"> Colegio Cristiano Peniel</h1><br>
+    
+    <h1>Formulario de preguntas</h1>
+    <form id="quizForm" onsubmit="return validateQuiz()">
+      <ol>
+        <li>
+          <label for="q1">1. Son expresiones propias de un grupo social:</label><br>
+          <input type="radio" name="q1" value="A">A) Jergas<br>
+          <input type="radio" name="q1" value="B">B) Inventos<br>
+          <input type="radio" name="q1" value="C">C) Lenguaje<br>
+        </li>
+        <li>
+          <label for="q2">2. Se refiere al lenguaje que usualmente utilizan los profesionales:</label><br>
+          <input type="radio" name="q2" value="A">A) Modismos<br>
+          <input type="radio" name="q2" value="B">B) Tecnicismos<br>
+          <input type="radio" name="q2" value="C">C) Profesión<br>
+        </li>
+        <li>
+          <label for="q3">3. Son expresiones que se utilizan en la vida diaria de una región:</label><br>
+          <input type="radio" name="q3" value="A">A) Las palabras<br>
+          <input type="radio" name="q3" value="B">B) Los textos<br>
+          <input type="radio" name="q3" value="C">C) Los regionalismos<br>
+        </li>
+        <li>
+          <label for="q4">4. Es la palabra que nombra personas, animales o cosas:</label><br>
+          <input type="radio" name="q4" value="A">A) Sustantivos<br>
+          <input type="radio" name="q4" value="B">B) Adjetivos<br>
+          <input type="radio" name="q4" value="C">C) Verbos<br>
+        </li>
+        <li>
+          <label for="q5">5. La palabra "jugar" es un verbo:</label><br>
+          <input type="radio" name="q5" value="A">A) SI<br>
+          <input type="radio" name="q5" value="B">B) NO<br>
+        </li>
+        <li>
+          <label for="q6">6. Es una técnica de investigación oral que se suscita entre dos personas:</label><br>
+          <input type="radio" name="q6" value="A">A) Entrevista<br>
+          <input type="radio" name="q6" value="B">B) Encuesta<br>
+          <input type="radio" name="q6" value="C">C) El fichaje<br>
+        </li>
+        <li>
+          <label for="q7">7. El investigador debe apoyarse de esta técnica con el fin de obtener varios datos de un caso:</label><br>
+          <input type="radio" name="q7" value="A">A) Cuestionario<br>
+          <input type="radio" name="q7" value="B">B) Fichaje<br>
+          <input type="radio" name="q7" value="C">C) Observación<br>
+        </li>
+        <li>
+          <label for="q8">8. Son palabras que expresan acción y movimiento:</label><br>
+          <input type="radio" name="q8" value="A">A) Sustantivos<br>
+          <input type="radio" name="q8" value="B">B) Verbos<br>
+          <input type="radio" name="q8" value="C">C) Adjetivos<br>
+        </li>
+        <li>
+          <label for="q9">9. Escriba una oración en tiempo pasado:</label><br>
+          <input type="text" name="q9" required><br>
+        </li>
+        <li>
+          <label for="q10">10. Es una época de Guatemala donde inicia la mayoría de poesías latinoamericanas:</label><br>
+          <input type="radio" name="q10" value="A">A) Época colonial<br>
+          <input type="radio" name="q10" value="B">B) Época moderna<br>
+          <input type="radio" name="q10" value="C">C) Época contemporánea<br>
+        </li>
+        <li>
+          <label for="q11">11. ¿Qué es Literatura?</label><br>
+          <input type="text" name="q11" required><br>
+        </li>
+        <li>
+          <label for="q12">12. Es una escritora y poetiza mexicana:</label><br>
+          <input type="radio" name="q12" value="A">A) Pita Amor<br>
+          <input type="radio" name="q12" value="B">B) Ana Patricia Rojo<br>
+          <input type="radio" name="q12" value="C">C) Paulina Rubio<br>
+        </li>
+        <li>
+          <label for="q13">13. Escriba el nombre de un literato guatemalteco:</label><br>
+          <input type="text" name="q13" required><br>
+        </li>
+        <li>
+          <label for="q14">14. Son distintas formas del verbo que denotan la época o momento:</label><br>
+          <input type="radio" name="q14" value="A">A) Tiempos del verbo<br>
+          <input type="radio" name="q14" value="B">B) Tiempos del sustantivo<br>
+          <input type="radio" name="q14" value="C">C) Tiempos del adjetivo<br>
+        </li>
+        <li>
+          <label for="q15">15. Son expresiones verbales que representan sonidos de animales, objetos y acciones:</label><br>
+          <input type="radio" name="q15" value="A">A) Aliteración<br>
+          <input type="radio" name="q15" value="B">B) Onomatopeyas<br>
+          <input type="radio" name="q15" value="C">C) Anáfora<br>
+        </li>
+      </ol>
+      <input type="submit" value="Enviar respuestas">
+    </form>
+  
+    <script>
+      function validateQuiz() {
+        // Respuestas correctas
+        const correctAnswers = {
+          q1: 'A',
+          q2: 'B',
+          q3: 'C',
+          q4: 'A',
+          q5: 'A',
+          q6: 'A',
+          q7: 'B',
+          q8: 'B',
+          q9: '', // No se proporciona respuesta correcta, será validado manualmente
+          q10: 'A',
+          q11: '', // No se proporciona respuesta correcta, será validado manualmente
+          q12: 'A',
+          q13: '', // No se proporciona respuesta correcta, será validado manualmente
+          q14: 'A',
+          q15: 'B',
+        };
+  
+        // Obtener respuestas seleccionadas por el usuario
+        const form = document.getElementById('quizForm');
+        const formData = new FormData(form);
+        let userAnswers = {};
+        formData.forEach((value, key) => {
+          userAnswers[key] = value;
+        });
+  
+        // Validar respuestas con excepción de preguntas con campo abierto
+        let score = 0;
+        for (const question in correctAnswers) {
+          if (question !== 'q9' && question !== 'q11' && question !== 'q13') {
+            if (userAnswers[question] === correctAnswers[question]) {
+              score++;
+            }
+          }
+        }
+  
+        // Validar preguntas con campo abierto manualmente
+        const q9Answer = userAnswers['q9'].trim();
+        const q11Answer = userAnswers['q11'].trim();
+        const q13Answer = userAnswers['q13'].trim();
+  
+        if (q9Answer !== '' && q11Answer !== '' && q13Answer !== '') {
+          score += 3; // Sumar 3 puntos si todas las respuestas están llenas
+        }
+  
+        // Mostrar resultados
+        alert(`¡Has obtenido ${score} respuestas correctas de 15!`);
+        window.location.href = "contraseña_2.html";
+      }
+
+      // Verificar si el examen ya ha sido completado previamente y redirigir a contraseña_2.html
+if (localStorage.getItem("formCompleted")) {
+showFinalScore();
+}
+// Verificar si el examen ya se ha completado
+const isExamCompleted = localStorage.getItem('formCompleted') === 'true';
+const isFormLocked = localStorage.getItem('formAbandoned') === 'true';
+// Bloquear la página si el examen no se ha completado
+if (!isExamCompleted && isFormLocked) {
+alert('Esta página se bloque debeido a que usted se salio del formulario, conslute al docente si desea continuar.');
+window.location.href = 'contrasena.html';
+}
+
+// Redirigir a contraseña.html si se abandona el examen o se cambia de página
+window.addEventListener("beforeunload", (event) => {
+                if (!examCompleted) {
+                    localStorage.setItem("formAbandoned", true);
+                    event.preventDefault();
+                    
+                }
+            });
+
+             // Detectar cambios de visibilidad en la página
+             document.addEventListener("visibilitychange", () => {
+                if (document.visibilityState === "hidden") {
+                    examCompleted = true;
+                    localStorage.setItem("formAbandoned", true);
+                    window.location.href = "contrasena.html";
+                }
+            });
+      </script>
+</body>
+</html>
